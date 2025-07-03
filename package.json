@@ -1,0 +1,17 @@
+{
+  "name": "vestuario-basico-em-breve",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "João Vitor",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7",
+    "sass": "^1.89.2",
+    "vite": "^6.3.5"
+  }
+}

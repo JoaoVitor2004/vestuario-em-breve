@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestuario básico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+    <main class="main d-flex justify-content-between w-100 vh-100 position-relative">
+        <img src="./images/bg-pattern-desktop.svg" alt="bg-pattern-desktop"
+            class="position-absolute top0 start-0 w-100 h-100 z-n1">
+        <section class="content-main">
+            <header class="header">
+                <img src="./images/logo.svg" alt="img-logo" class="logo">
+            </header>
+            <div class="apresentation w-100 h-100 d-flex flex-column justify-content-center">
+                <h1 class="title text-uppercase mb-4 lh-sm"><span class="color">We're</span> <br> coming soon</h1>
+                <p class="description lh-base fs-5 mb-5">Hello fellow shoppers! We're currently building our new
+                    fashion
+                    store.
+                    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <form id="form" method="get" autocomplete="on"
+                    class="w-400 mw-100 py-2 d-flex justify-content-between form-control rounded-5 position-relative">
+                    <input type="email" name="email" id="email" class="w-100 px-5" placeholder="Email Address">
+                    <button type="submit"
+                        class="btn position-absolute top-0 end-0 h-100 btn-submit h-100 px-4 border-0 rounded-5">
+                        <img class="w-100 h-100" src="./images/icon-arrow.svg" alt="icon-arrow">
+                    </button>
+                </form>
+            </div>
+        </section>
+        <picture class="img-hero">
+            <source media="(max-width: 1250px)" srcset="./images/hero-mobile.jpg">
+            <img class="hero" src="./images/hero-desktop.jpg" alt="hero-desktop">
+        </picture>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

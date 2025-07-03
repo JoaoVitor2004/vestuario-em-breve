@@ -1,0 +1,69 @@
+@import "bootstrap/scss/bootstrap";
+@import "./responsive";
+
+$font-primary: "Josefin Sans";
+
+$desatured-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$dark-red: hsl(0, 6%, 24%);
+$white1: hsl(0, 0%, 100%);
+$white2: hsl(0, 100%, 98%);
+$red1: hsl(0, 80%, 86%);
+$red2: hsl(0, 74%, 74%);
+
+$weight300: 300;
+$weight400: 400;
+$weight600: 600;
+
+body {
+    font-family: $font-primary;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.main .hero {
+    object-fit: cover;
+    height: 100vh;
+
+    @media (width < 1250px) {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+.content-main {
+    padding: 3% 3% 3% 8%;
+
+    .apresentation .title {
+        font-size: 80px;
+        font-weight: $weight600;
+    }
+
+    .apresentation .title .color {
+        font-weight: $weight300;
+        color: $desatured-red;
+    }
+
+    .apresentation .description {
+        max-width: 500px;
+        color: $desatured-red;
+        font-weight: $weight400;
+    }
+
+    .apresentation form {
+        width: 540px;
+
+        .btn-submit {
+            background: linear-gradient(to left, $red1, $red2);
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                filter: drop-shadow(0 0 50px $red2);
+            }
+        }
+    }
+}
