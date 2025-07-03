@@ -2,7 +2,19 @@ import "../scss/styles.scss";
 
 const form = document.querySelector("#form")
 const email = document.querySelector("#email")
-const main = document.querySelector(".main")
+const textError = document.querySelector("#text-error")
+
+function showErrorInterface() {
+    textError.classList.remove("hide")
+    form.classList.add("border-error")
+}
+
+function clearErrorInterface() {
+    textError.classList.add("hide")
+    form.classList.remove("border-error")
+}
+
+email.addEventListener("input", clearErrorInterface)
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
@@ -14,9 +26,9 @@ form.addEventListener("submit", (event) => {
             destination: "https://github.com/apvarun/toastify-js",
             newWindow: true,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "left", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top",
+            position: "left",
+            stopOnFocus: true,
             style: {
                 display: "flex",
                 flexDirection: "row-reverse",
@@ -27,6 +39,7 @@ form.addEventListener("submit", (event) => {
             },
             onClick: function () { } // Callback after click
         }).showToast();
+        showErrorInterface()
         return
     }
 

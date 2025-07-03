@@ -54,6 +54,16 @@ input {
         font-weight: $weight400;
     }
 
+    .apresentation .text-error {
+        font-size: 12px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .apresentation .text-error.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     .apresentation form {
         width: 540px;
 
@@ -66,4 +76,8 @@ input {
             }
         }
     }
+}
+
+.border-error {
+    border: 2px solid #EF9393;
 }
