@@ -1,19 +1,8 @@
+@use "./variables" as *;
+@use "./responsive";
+
 @import "bootstrap/scss/bootstrap";
-@import "./responsive";
 
-$font-primary: "Josefin Sans";
-
-$desatured-red: hsl(0, 36%, 70%);
-$soft-red: hsl(0, 93%, 68%);
-$dark-red: hsl(0, 6%, 24%);
-$white1: hsl(0, 0%, 100%);
-$white2: hsl(0, 100%, 98%);
-$red1: hsl(0, 80%, 86%);
-$red2: hsl(0, 74%, 74%);
-
-$weight300: 300;
-$weight400: 400;
-$weight600: 600;
 
 body {
     font-family: $font-primary;
